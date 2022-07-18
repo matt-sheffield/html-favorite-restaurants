@@ -33,13 +33,41 @@ main .card {
     margin-bottom: 20px;
 }
 
-main .card img {
+main .card a {
+    text-decoration: none;
+    color: #333333;
+}
+
+main .card a .card-content .card-image {
     width: 100%;
-    height: auto;
-    max-height: 100px;
+    height: 100px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+main .card a .card-content .card-image.my-kitchen {
+    background-image: url(Images/my_kitchen.png);
+}
+
+main .card a .card-content .card-image.cornish-pasty {
+    background-image: url(Images/cornishpasty.jpg);
+}
+
+main .card a .card-content .card-image.angels {
+    background-image: url(Images/angels.jpg);
+}
+
+main .card a .card-content .card-image.bacanora {
+    background-image: url(Images/Bacanora.jpg);
+}
+
+main .card a .card-content .card-image.pemberton {
+    background-image: url(Images/Pemberton.jpg);
+}
+
 
 main .card .card-content .card-body {
     padding-left: 10px;
@@ -48,25 +76,9 @@ main .card .card-content .card-body {
     height: 100%;
 }
 
-main .card a {
-    text-decoration: none;
-    z-index: 1;
-    position: relative;
-}
-
 main .card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39), 0 6px 6px rgba(0, 0, 0, 0.33);
 }
-
-main .card a .card-content:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: ' ';
-}
-
 
 main .card:last-of-type {
     margin-bottom: 40px !important;
