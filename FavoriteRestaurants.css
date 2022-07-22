@@ -1,8 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Poppins', Arial, sans-serif;
     color: #333333;
     padding-bottom: 40px;
     background-color: #efefef;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .container {
@@ -16,12 +27,102 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* Start Header */
+/* Start Nav */
 
-header {
+nav {
+    display: sticky;
+    top: 0;
+    background-color: #000;
+}
+
+nav .nav-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    align-items: center;   
+}
+
+nav .left-side {
+    justify-content: flex-start;
+    align-content: center;
+}
+
+nav ul li.logo {
+    background-color: red;
+}
+
+nav ul li a,
+.dropbtn {
+    float: left;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
     text-align: center;
 }
 
+nav ul li a:hover {
+    background-color: rgb(148, 148, 148);
+}
+
+nav ul li.logo a:hover {
+    background-color: unset;
+}
+
+nav .nav-content .search-bar {
+    justify-content: center;
+    position: relative;
+    left: -80px;
+}
+
+nav .nav-content .search-bar input {
+    margin-right: 0px;
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+nav .nav-content .search-bar button {
+    margin-left: 0px;
+    height: 30px;
+    position: relative;
+    left: -38px;
+    background-color: red;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav .nav-content .search-bar button {
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav .right-side {
+    padding-right: 10px;
+    color: #ffffff;
+}
+
+nav .right-side a {
+    display: inline-block;
+    text-align: right;
+    color: #ffffff;
+    text-decoration: none;
+} 
+
+nav .right-side a:last-of-type {
+    display: block;
+}
+
+/* Start Header */
 
 main .card {
     width: 200px;
