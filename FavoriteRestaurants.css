@@ -6,7 +6,6 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     color: #333333;
-    padding-bottom: 40px;
     background-color: #efefef;
 }
 
@@ -46,8 +45,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; 
-    align-items: center;   
+    display: flex;
+    align-items: center;
 }
 
 nav .left-side {
@@ -116,13 +115,58 @@ nav .right-side a {
     text-align: right;
     color: #ffffff;
     text-decoration: none;
-} 
+}
 
 nav .right-side a:last-of-type {
     display: block;
 }
 
-/* Start Header */
+nav li a,
+.dropbtn {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover,
+nav .dropdown:hover .dropbtn {
+    background-color: #0088ce;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 62px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+}
+
+nav .dropdown-content a {
+    color: #000;
+    display: block;
+    text-align: left;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #e1e1e1;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* End Header */
+/* Start Main */
+
+body .container {
+    margin-bottom: 260px;
+}
 
 main .card {
     width: 200px;
@@ -216,3 +260,31 @@ main .form-body textarea {
     width: 100%;
     padding: 5px;
 }
+
+/* End Main */
+
+/* Start Footer */
+
+footer {
+    min-height: 200px;
+    background-color: #000;
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    width: 960px;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+footer p,
+footer a {
+    color: #ffffff;
+}
+
+/* End Footer */
